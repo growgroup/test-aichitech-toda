@@ -1,0 +1,36 @@
+extends /inc/foundation/_base.pug
+block append config
+  - current.id = "top" // ページのID
+  - current.title = "トップページ" // タイトルあ
+  - current.description = "これはトップページの説明文です" // 説明文
+  - current.bodyClass = "top" // body に付与するクラス
+  - current.depth = 1 // ページの階層
+
+
+
+block body
+    .l-topview
+        .l-topview-img 
+            //- +img("topview.png", "topview")
+            .l-topview-text DESIGN SOCIETY 
+            .l-topview-appeal
+                div
+                    +img("社会を.png", "社会を")
+                    +img("デザインする.png", "デザインする")
+                +img("Design.png","design")
+            .l-topview-page 
+                span.is-selected 01
+                span 02
+                span 03
+        .l-topview__block 
+            .l-topview__block-scroll
+                div SCROLL
+                span 
+            .c-news
+                .c-news-title
+                    h3 NEWS
+                .c-news-category
+                    p 教員コラム
+                .c-news-day 
+                    p 2020.04.07
+                .c-news-text お知らせ投稿タイトルがここに入ります。

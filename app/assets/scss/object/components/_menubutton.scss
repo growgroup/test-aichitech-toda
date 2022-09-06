@@ -1,0 +1,36 @@
+@media (max-width: 950px){
+    .c-menubutton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        &__content{
+            width: 20px;
+            height: 15px;
+            position: relative;
+            &>span{
+                width: 20px;
+                height: 2px;
+                background-color: #333;
+                display: block;
+                transform: translate(-50%, -50%);
+                position: relative;
+            }
+
+            &>span:first-child{
+                top: 0;
+                left: 50%;
+            }
+            &>span:nth-child(2){
+                top: 50%;
+                left: 50%;
+            }
+            
+            &>span:last-child{
+                top: 100%;
+                left: 50%;
+            }
+        }
+    }
+}
